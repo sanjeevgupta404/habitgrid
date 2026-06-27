@@ -68,7 +68,8 @@ def run_evaluation():
     # This is for demonstration of the evaluation framework.
     mock_gt = [(1290, 1226, 150), (1000, 500, 50), (2000, 1500, 80)]
 
-    img = cv2.imread("data/moon1.jpg")
+    img_path = os.path.join("data", "moon1.jpg")
+    img = cv2.imread(img_path)
     if img is not None:
         detected = detect_craters(img)
         p, r, f1 = evaluate_detection(detected, mock_gt)
