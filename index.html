@@ -1,62 +1,58 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <!-- Critical: viewport with viewport-fit=cover for notch/island safe areas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>HabitGrid — Habit Tracker</title>
-  <meta name="description" content="Track your habits month by month with a beautiful, spreadsheet-style grid." />
-
-  <!-- PWA manifest -->
-  <link rel="manifest" href="./manifest.json" />
-
-  <!-- Theme colour — matches manifest theme_color, updated by JS for dark mode -->
-  <meta name="theme-color" content="#6366f1" id="meta-theme-color" />
-
-  <!-- iOS / Safari PWA meta tags -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="HabitGrid" />
-  <link rel="apple-touch-icon" href="./icons/icon.svg" />
-
-  <!-- Android / Chrome -->
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="application-name" content="HabitGrid" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="./styles.css" />
-
-  <!-- Prevent FOUC: apply theme + accent before first paint -->
-  <script>
-    (function() {
-      try {
-        var s = JSON.parse(localStorage.getItem('hg_settings_v2') || '{}');
-        var t = s.theme === 'system'
-          ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-          : (s.theme || 'light');
-        document.documentElement.setAttribute('data-theme', t);
-        if (s.accentColor) {
-          document.documentElement.style.setProperty('--accent', s.accentColor);
-          var m = document.getElementById('meta-theme-color');
-          if (m) m.content = s.accentColor;
-        }
-      } catch(e) {}
-    })();
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Rubik's Cube</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app">
-    <!-- #topbar is prepended here by topbar.js -->
-    <div id="page-content" class="page-content"></div>
-    <!-- #bottom-nav is appended here by bottomNav.js -->
-  </div>
+    <div id="ui-container">
+        <header>
+            <h1>Rubik's Cube</h1>
+            <div id="stats">
+                <span>Moves: <span id="move-count">0</span></span>
+            </div>
+        </header>
 
-  <!-- Toast portal — outside #app so z-index is always on top -->
-  <div id="toast-container"></div>
+        <div id="game-container">
+            <div id="canvas-container"></div>
 
-  <script type="module" src="./src/main.js"></script>
+            <div id="solved-message" class="hidden">
+                <h2>Cube Solved!</h2>
+            </div>
+        </div>
+
+        <div id="controls">
+            <div class="control-group">
+                <button class="move-btn" data-move="U">U</button>
+                <button class="move-btn" data-move="U'">U'</button>
+                <button class="move-btn" data-move="D">D</button>
+                <button class="move-btn" data-move="D'">D'</button>
+                <button class="move-btn" data-move="L">L</button>
+                <button class="move-btn" data-move="L'">L'</button>
+                <button class="move-btn" data-move="R">R</button>
+                <button class="move-btn" data-move="R'">R'</button>
+                <button class="move-btn" data-move="F">F</button>
+                <button class="move-btn" data-move="F'">F'</button>
+                <button class="move-btn" data-move="B">B</button>
+                <button class="move-btn" data-move="B'">B'</button>
+            </div>
+            <div class="action-group">
+                <button id="scramble-btn">Scramble</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            <div class="shortcuts-info">
+                <p>Keyboard: R, L, U, D, F, B (Shift for inverse)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- OrbitControls -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <!-- Main Script -->
+    <script src="main.js"></script>
 </body>
 </html>
