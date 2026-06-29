@@ -1,52 +1,91 @@
-# HabitGrid v2
+# CineVerse
 
-A full-featured productivity and habit tracking app. Frontend-only, no build tools required — open `index.html` in any modern browser.
+CineVerse is a modern, production-ready web application for discovering, searching, comparing, and exploring Movies, TV Shows, and Web Series from around the world. Built with React 19, TypeScript, and Tailwind CSS, it offers a premium UI/UX inspired by leading platforms like Netflix and Letterboxd.
 
-## Architecture
+## 🚀 Features
+
+- **Immersive Landing Page**: Hero banner with trending content and category-based carousels.
+- **Global Search with Instant Suggestions**: Fast, debounced search across movies, TV shows, and people.
+- **Deep Discovery**: Advanced filtering by genre, year, and popularity with a dedicated discover interface.
+- **Comprehensive Details**: Metadata, trailers, cast, reviews, and similar recommendations for every title.
+- **Enhanced Comparison Tool**: Side-by-side comparison of up to 3 titles including Ratings, Popularity, Runtime, Revenue/Seasons, Cast, and Awards.
+- **AI Recommendations**: Personalized AI assistant for tailored movie and TV show suggestions using Gemini.
+- **Full User Life-cycle Tracking**:
+  - Favorites & Watchlist
+  - Status Tracking: Watching, Plan to Watch, Completed
+  - Watch History (Auto-tracked)
+  - All data persisted via LocalStorage.
+- **Responsive Design**: Mobile-first approach with smooth animations using Framer Motion.
+- **Dark/Light Mode**: Full system and manual theme support with glassmorphism UI.
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19, TypeScript, Vite, React Router 7
+- **Styling**: Tailwind CSS, Framer Motion, Lucide Icons
+- **State Management**: React Context API + Custom Hooks
+- **Data Fetching**: Axios (TMDB API & OMDb API)
+- **Quality**: ESLint, Prettier, Oxlint
+- **Verification**: Playwright
+
+## 📂 Project Structure
 
 ```
 src/
-├── core/
-│   ├── constants.js   — All fixed values, route names, STORAGE_KEYS
-│   ├── api.js         — Data layer abstraction (localStorage now, swap for fetch later)
-│   ├── store.js       — Central state + pub/sub observer + all async actions
-│   ├── router.js      — Hash-based SPA router with auth guards
-│   └── theme.js       — Dark/light/system theme manager
-├── utils/
-│   ├── date.js        — Pure date helpers, no side effects
-│   ├── stats.js       — Pure analytics (streaks, totals, trends)
-│   └── io.js          — File export (JSON/CSV) and import
-├── components/
-│   ├── shared.js      — Reusable HTML primitives (stat card, progress bar, badges)
-│   ├── modal.js       — Modal manager with stack support
-│   ├── habitModal.js  — Add/Edit habit form (Promise-based)
-│   ├── toast.js       — Toasts + confetti
-│   └── topbar.js      — Sticky nav bar (subscribes to store)
-├── pages/
-│   ├── auth.js        — Login / Register (auth-ready structure)
-│   ├── tracker.js     — Main monthly habit grid
-│   ├── history.js     — Monthly history + trend chart
-│   └── settings.js    — Preferences, export/import, reset
-└── main.js            — Bootstrap: store → theme → topbar → router
+├── api/          # Axios client configurations
+├── components/   # Reusable UI & feature-specific components
+│   ├── ai/       # AI Assistant interface
+│   ├── home/     # Hero & Content sections
+│   ├── layout/   # Navbar & Footer
+│   └── ui/       # Atom components (Button, Card, etc.)
+├── context/      # Global state providers
+├── hooks/        # Custom React hooks (useAppContext, useUserContext)
+├── layouts/      # Main page layouts
+├── pages/        # Route-level page components
+├── services/     # API service layers
+├── types/        # TypeScript interfaces
+└── utils/        # Utility functions (cn, etc.)
 ```
 
-## Adding a Backend
+## 🏁 Getting Started
 
-The `src/core/api.js` file is the only layer that needs changing:
-- Replace `readKey`/`writeKey` with `fetch()` calls in `AuthAPI`, `HabitsAPI`, `CompletionsAPI`
-- Keep `store.js`, all pages, and all components exactly as-is
-- Add request headers (e.g. `Authorization: Bearer <token>`) in `api.js` once you have real sessions
+### Prerequisites
 
-## Features
+- Node.js (v18+)
+- npm or yarn
 
-- **Monthly habit grid** — sticky name column, week groupings, day toggles
-- **Dashboard** — 5 live stat cards (habits, today, streaks, monthly %)
-- **Filters** — All / Done Today / Missed Today + category
-- **History page** — 6-month trend bar chart, per-habit breakdown cards
-- **Settings page** — theme (light/dark/system), accent colour picker, default goal, export/import, reset
-- **Auth page** — login + register UI (localStorage-backed, backend-ready)
-- **Data export** — JSON backup + per-month CSV
-- **Data import** — restore from JSON backup
-- **Dark mode** — full CSS token system, no flash on load
-- **Responsive** — works on mobile, tablet, and desktop
-- **Keyboard shortcuts** — Escape closes modal, Ctrl+Enter saves
+### Installation
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/cineverse.git
+    cd cineverse
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Environment Variables**:
+    Create a `.env` file based on `.env.example`:
+    ```env
+    VITE_TMDB_API_KEY=your_tmdb_api_key
+    VITE_OMDB_API_KEY=your_omdb_api_key
+    VITE_GEMINI_API_KEY=your_gemini_api_key
+    ```
+
+4.  **Start Development Server**:
+    ```bash
+    npm run dev
+    ```
+
+### Production Build
+
+To build the project for production:
+```bash
+npm run build
+```
+
+## 📄 License
+
+This project is licensed under the MIT License.
