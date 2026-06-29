@@ -1,62 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8" />
-  <!-- Critical: viewport with viewport-fit=cover for notch/island safe areas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>HabitGrid — Habit Tracker</title>
-  <meta name="description" content="Track your habits month by month with a beautiful, spreadsheet-style grid." />
-
-  <!-- PWA manifest -->
-  <link rel="manifest" href="./manifest.json" />
-
-  <!-- Theme colour — matches manifest theme_color, updated by JS for dark mode -->
-  <meta name="theme-color" content="#6366f1" id="meta-theme-color" />
-
-  <!-- iOS / Safari PWA meta tags -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="HabitGrid" />
-  <link rel="apple-touch-icon" href="./icons/icon.svg" />
-
-  <!-- Android / Chrome -->
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="application-name" content="HabitGrid" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="./styles.css" />
-
-  <!-- Prevent FOUC: apply theme + accent before first paint -->
-  <script>
-    (function() {
-      try {
-        var s = JSON.parse(localStorage.getItem('hg_settings_v2') || '{}');
-        var t = s.theme === 'system'
-          ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-          : (s.theme || 'light');
-        document.documentElement.setAttribute('data-theme', t);
-        if (s.accentColor) {
-          document.documentElement.style.setProperty('--accent', s.accentColor);
-          var m = document.getElementById('meta-theme-color');
-          if (m) m.content = s.accentColor;
-        }
-      } catch(e) {}
-    })();
-  </script>
-</head>
-<body>
-  <div id="app">
-    <!-- #topbar is prepended here by topbar.js -->
-    <div id="page-content" class="page-content"></div>
-    <!-- #bottom-nav is appended here by bottomNav.js -->
-  </div>
-
-  <!-- Toast portal — outside #app so z-index is always on top -->
-  <div id="toast-container"></div>
-
-  <script type="module" src="./src/main.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6366f1" />
+    <meta name="description" content="CineVerse - Modern Movie & TV Discovery Platform" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>CineVerse | Discover Movies & TV</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
