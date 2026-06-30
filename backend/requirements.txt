@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+langchain
+langchain-google-genai
+chromadb
+psycopg[binary]
+pydantic-settings
+python-dotenv
