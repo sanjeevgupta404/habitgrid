@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from enum import Enum
 from typing import Optional, List
 from sqlmodel import Field, SQLModel, Relationship
@@ -90,7 +90,7 @@ class FIR(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     fir_number: str = Field(unique=True, index=True)
     incident_date: datetime
-    registration_date: datetime = Field(default_factory=datetime.utcnow)
+    registration_date: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     location: str
     description: str
     status: FIRStatus = Field(default=FIRStatus.OPEN)
@@ -112,7 +112,7 @@ class Evidence(SQLModel, table=True):
     type: EvidenceType
     description: str
     file_path: Optional[str] = None
-    collected_at: datetime = Field(default_factory=datetime.utcnow)
+    collected_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
     fir: Optional[FIR] = Relationship(back_populates="evidence")
 
@@ -120,8 +120,8 @@ class InvestigationReport(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     fir_id: int = Field(foreign_key="fir.id")
     report_content: str
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-    updated_at: datetime = Field(default_factory=datetime.utcnow)
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    updated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
     fir: Optional[FIR] = Relationship(back_populates="reports")
 
@@ -131,5 +131,5 @@ class AuditLog(SQLModel, table=True):
     action: str
     entity_name: str
     entity_id: Optional[int] = None
-    timestamp: datetime = Field(default_factory=datetime.utcnow)
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     details: Optional[str] = None
