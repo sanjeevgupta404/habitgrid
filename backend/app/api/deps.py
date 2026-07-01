@@ -5,7 +5,6 @@ from jose import jwt, JWTError
 from sqlmodel import Session, select
 from app.db.session import engine
 from app.core.config import settings
-from app.core.security import ALGORITHM
 from app.models.user import User, UserRole
 from app.schemas.user import TokenData
 

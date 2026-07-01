@@ -1,24 +1,46 @@
+import React, { useState, useEffect } from 'react';
+import { useAuth } from '@/context/AuthContext';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell } from 'recharts';
+import { Loader2 } from 'lucide-react';
 
-const data = [
-  { name: 'Bangalore', value: 400 },
-  { name: 'Mysore', value: 300 },
-  { name: 'Hubli', value: 200 },
-  { name: 'Mangalore', value: 278 },
-  { name: 'Belgaum', value: 189 },
-];
-
-const crimeTypes = [
-  { name: 'Theft', value: 40 },
-  { name: 'Assault', value: 25 },
-  { name: 'Fraud', value: 20 },
-  { name: 'Cyber', value: 15 },
-];
-
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8'];
 
 const CrimeAnalytics = () => {
+  const [districtData, setDistrictData] = useState<any[]>([]);
+  const [categoryData, setCategoryData] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const { token } = useAuth();
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const [distResponse, catResponse] = await Promise.all([
+          fetch(`${import.meta.env.VITE_API_URL}/crime/stats/districts`, { headers: { 'Authorization': `Bearer ${token}` } }),
+          fetch(`${import.meta.env.VITE_API_URL}/crime/stats/categories`, { headers: { 'Authorization': `Bearer ${token}` } })
+        ]);
+
+        if (distResponse.ok && catResponse.ok) {
+          setDistrictData(await distResponse.json());
+          setCategoryData(await catResponse.json());
+        }
+      } catch (error) {
+        console.error("Failed to fetch analytics", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchStats();
+  }, [token]);
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center h-96">
+        <Loader2 className="w-8 h-8 animate-spin text-primary" />
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-8">
       <div>
@@ -36,7 +58,7 @@ const CrimeAnalytics = () => {
           <CardContent>
             <div className="h-[300px]">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={data}>
+                <BarChart data={districtData}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} />
                   <XAxis dataKey="name" />
                   <YAxis />
@@ -52,12 +74,12 @@ const CrimeAnalytics = () => {
           <CardHeader>
             <CardTitle>Crime Categories</CardTitle>
           </CardHeader>
-          <CardContent className="flex justify-center">
-            <div className="h-[300px] w-full">
+          <CardContent className="flex flex-col items-center">
+            <div className="h-[250px] w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <Pie
-                    data={crimeTypes}
+                    data={categoryData}
                     cx="50%"
                     cy="50%"
                     innerRadius={60}
@@ -65,22 +87,23 @@ const CrimeAnalytics = () => {
                     paddingAngle={5}
                     dataKey="value"
                   >
-                    {crimeTypes.map((_, index) => (
+                    {categoryData.map((_, index) => (
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
                   <Tooltip />
                 </PieChart>
               </ResponsiveContainer>
-              <div className="flex justify-center gap-4 text-xs">
-                 {crimeTypes.map((item, i) => (
-                   <div key={i} className="flex items-center gap-1">
-                     <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS[i] }} />
-                     <span>{item.name}</span>
+            </div>
+            <div className="grid grid-cols-2 gap-x-8 gap-y-2 text-xs mt-4">
+                 {categoryData.map((item, i) => (
+                   <div key={i} className="flex items-center gap-2">
+                     <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS[i % COLORS.length] }} />
+                     <span className="font-medium">{item.name}</span>
+                     <span className="text-muted-foreground">{item.value}</span>
                    </div>
                  ))}
               </div>
-            </div>
           </CardContent>
         </Card>
       </div>
@@ -92,7 +115,7 @@ const CrimeAnalytics = () => {
         <CardContent>
           <div className="h-[300px]">
             <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={data}>
+              <LineChart data={districtData}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} />
                 <XAxis dataKey="name" />
                 <YAxis />

@@ -1,6 +1,6 @@
 from typing import Any, List
 from fastapi import APIRouter, Depends, HTTPException, status
-from sqlmodel import Session
+from sqlmodel import Session, func, select
 from app.api import deps
 from app.services.crime import (
     police_station_service, officer_service, crime_category_service,
@@ -105,3 +105,40 @@ def read_logs(
     current_user = Depends(deps.RoleChecker([UserRole.ADMIN]))
 ) -> Any:
     return audit_log_service.get_multi(db, skip=skip, limit=limit)
+
+@router.get("/stats/districts")
+def get_district_stats(
+    db: Session = Depends(deps.get_db),
+    current_user = Depends(deps.get_current_user)
+) -> Any:
+    """
+    Get crime distribution by district from database.
+    """
+    # Join FIR with PoliceStation to get district info
+    statement = (
+        select(PoliceStation.district, func.count(FIR.id).label("value"))
+        .join(Officer, FIR.officer_id == Officer.id)
+        .join(PoliceStation, Officer.police_station_id == PoliceStation.id)
+        .group_by(PoliceStation.district)
+        .order_by(func.count(FIR.id).desc())
+        .limit(5)
+    )
+    results = db.exec(statement).all()
+    return [{"name": r[0], "value": r[1]} for r in results]
+
+@router.get("/stats/categories")
+def get_category_stats(
+    db: Session = Depends(deps.get_db),
+    current_user = Depends(deps.get_current_user)
+) -> Any:
+    """
+    Get crime categories distribution from database.
+    """
+    statement = (
+        select(CrimeCategory.name, func.count(FIR.id).label("value"))
+        .join(FIR, FIR.category_id == CrimeCategory.id)
+        .group_by(CrimeCategory.name)
+        .order_by(func.count(FIR.id).desc())
+    )
+    results = db.exec(statement).all()
+    return [{"name": r[0], "value": r[1]} for r in results]
