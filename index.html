@@ -20,6 +20,13 @@
           <h1 class="brand-title">Lyrikal <span class="accent-text">Nerd</span></h1>
         </div>
         <p class="tagline">Are you a true hip-hop head? Guess the correct artist behind 50 of the most iconic rap lyrics from the 90s, 2000s, 2010s, and 2020s.</p>
+
+        <!-- Error Container (Hidden by default) -->
+        <div id="error-container" class="error-panel hidden">
+          <span class="error-icon">⚠️</span>
+          <p id="error-message" class="error-text">Failed to load the lyrics database. Please make sure quotes.json is available.</p>
+        </div>
+
         <button id="start-btn" class="btn btn-primary btn-large">Start Game</button>
       </div>
     </section>
@@ -49,6 +56,7 @@
       <div class="progress-bar-container">
         <div id="progress-fill" class="progress-bar-fill"></div>
       </div>
+      <div id="progress-text-indicator" class="progress-text-indicator"></div>
 
       <!-- Main Quote Display -->
       <div class="glass-card quote-card">

@@ -31,11 +31,15 @@ const DOM = {
   restartBtn: document.getElementById('restart-btn'),
   nextBtn: document.getElementById('next-btn'),
 
+  errorContainer: document.getElementById('error-container'),
+  errorMessage: document.getElementById('error-message'),
+
   progressVal: document.getElementById('progress-val'),
   scoreVal: document.getElementById('score-val'),
   streakVal: document.getElementById('streak-val'),
   streakFire: document.getElementById('streak-fire'),
   progressFill: document.getElementById('progress-fill'),
+  progressTextIndicator: document.getElementById('progress-text-indicator'),
 
   quoteText: document.getElementById('quote-text'),
   optionsGrid: document.getElementById('options-grid'),
@@ -85,6 +89,13 @@ async function loadQuotes() {
     console.log(`Loaded ${state.allQuotes.length} quotes successfully.`);
   } catch (error) {
     console.error("Failed to load quotes:", error);
+    if (DOM.errorContainer && DOM.errorMessage) {
+      DOM.errorMessage.textContent = `Failed to load the lyrics: ${error.message || error}. Please make sure quotes.json is valid and run with a local server.`;
+      DOM.errorContainer.classList.remove('hidden');
+    }
+    if (DOM.startBtn) {
+      DOM.startBtn.style.display = 'none';
+    }
     DOM.quoteText.textContent = "Error loading lyric bars. Please check if quotes.json exists and run with a local server.";
   }
 }
@@ -144,6 +155,10 @@ function renderQuestion() {
   DOM.progressVal.textContent = `${state.currentIndex + 1}/${state.gameQuotes.length}`;
   const pct = ((state.currentIndex) / state.gameQuotes.length) * 100;
   DOM.progressFill.style.width = `${pct}%`;
+
+  if (DOM.progressTextIndicator) {
+    DOM.progressTextIndicator.textContent = `Question ${state.currentIndex + 1} of ${state.gameQuotes.length}`;
+  }
 }
 
 /**
@@ -153,14 +168,19 @@ function renderQuestion() {
 function handleAnswer(chosenArtist) {
   if (state.hasAnswered) return;
   state.hasAnswered = true;
+
+  // Immediately and synchronously disable all buttons to prevent double-answering
+  DOM.optionBtns.forEach(btn => {
+    btn.disabled = true;
+  });
+
   state.selectedArtist = chosenArtist;
 
   const currentQuote = state.gameQuotes[state.currentIndex];
   const isCorrect = (chosenArtist === currentQuote.artist);
 
-  // Disable all choice buttons and apply conditional highlights
+  // Apply conditional highlights to choice buttons
   DOM.optionBtns.forEach(btn => {
-    btn.disabled = true;
     const btnChoice = btn.getAttribute('data-choice');
 
     if (btnChoice === currentQuote.artist) {
@@ -323,6 +343,23 @@ function setupEventListeners() {
     if (!btn || btn.disabled) return;
     const choice = btn.getAttribute('data-choice');
     handleAnswer(choice);
+  });
+
+  // Global keydown handler for choosing options 1-4 via keyboard
+  document.addEventListener('keydown', (e) => {
+    // Only handle keys if quiz screen is currently active and the user has not answered yet
+    if (!DOM.quizScreen.classList.contains('active') || state.hasAnswered) {
+      return;
+    }
+
+    if (['1', '2', '3', '4'].includes(e.key)) {
+      const index = parseInt(e.key, 10) - 1;
+      const targetBtn = DOM.optionBtns[index];
+      if (targetBtn && !targetBtn.disabled) {
+        const choice = targetBtn.getAttribute('data-choice');
+        handleAnswer(choice);
+      }
+    }
   });
 }
 
