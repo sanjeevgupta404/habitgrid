@@ -1,52 +1,56 @@
-# HabitGrid v2
+# Lyrikal Nerd 🎤
 
-A full-featured productivity and habit tracking app. Frontend-only, no build tools required — open `index.html` in any modern browser.
+Are you a true hip-hop head? **Lyrikal Nerd** is an interactive, Wordle-inspired rap lyrics trivia guessing game that tests your knowledge of 50 of the most iconic rap verses from the 90s, 2000s, 2010s, and 2020s.
 
-## Architecture
+---
 
+## ⚡ Concept
+
+Players are presented with a short 1-2 line lyric snippet (without artist names or context). You must guess which hip-hop artist said it from four multiple-choice options.
+- **Score Tracker:** Keep track of correct answers.
+- **Streak Tracker:** Build high streaks to unlock the "fire" status (🔥) and secure bragging rights.
+- **Nerd Status Tiering:** At the end of the session, receive your ranking based on performance, ranging from **Ghostwriter Target** up to the ultimate **G.O.A.T.** tier!
+
+---
+
+## 🚀 How to Run Locally
+
+Since this app uses vanilla JavaScript with modern Web APIs (`fetch` for retrieving local JSON files), most modern browsers block direct local file fetching (`file://` protocol) due to CORS security policies.
+
+To run it locally, run a simple local web server in the project directory:
+
+### Option 1: Python (Recommended)
+If you have Python installed, open your terminal in the repository root and run:
+```bash
+python3 -m http.server 3000
 ```
-src/
-├── core/
-│   ├── constants.js   — All fixed values, route names, STORAGE_KEYS
-│   ├── api.js         — Data layer abstraction (localStorage now, swap for fetch later)
-│   ├── store.js       — Central state + pub/sub observer + all async actions
-│   ├── router.js      — Hash-based SPA router with auth guards
-│   └── theme.js       — Dark/light/system theme manager
-├── utils/
-│   ├── date.js        — Pure date helpers, no side effects
-│   ├── stats.js       — Pure analytics (streaks, totals, trends)
-│   └── io.js          — File export (JSON/CSV) and import
-├── components/
-│   ├── shared.js      — Reusable HTML primitives (stat card, progress bar, badges)
-│   ├── modal.js       — Modal manager with stack support
-│   ├── habitModal.js  — Add/Edit habit form (Promise-based)
-│   ├── toast.js       — Toasts + confetti
-│   └── topbar.js      — Sticky nav bar (subscribes to store)
-├── pages/
-│   ├── auth.js        — Login / Register (auth-ready structure)
-│   ├── tracker.js     — Main monthly habit grid
-│   ├── history.js     — Monthly history + trend chart
-│   └── settings.js    — Preferences, export/import, reset
-└── main.js            — Bootstrap: store → theme → topbar → router
+Then, open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Option 2: Node.js (npx)
+If you have Node.js installed:
+```bash
+npx serve .
 ```
+Then, visit [http://localhost:3000](http://localhost:3000) (or the port specified).
 
-## Adding a Backend
+---
 
-The `src/core/api.js` file is the only layer that needs changing:
-- Replace `readKey`/`writeKey` with `fetch()` calls in `AuthAPI`, `HabitsAPI`, `CompletionsAPI`
-- Keep `store.js`, all pages, and all components exactly as-is
-- Add request headers (e.g. `Authorization: Bearer <token>`) in `api.js` once you have real sessions
+## 📸 Demo Preview
 
-## Features
+*(A demo of the application flow can be placed here once deployed)*
+![Lyrikal Nerd Demo Placeholder](demo-placeholder.png)
 
-- **Monthly habit grid** — sticky name column, week groupings, day toggles
-- **Dashboard** — 5 live stat cards (habits, today, streaks, monthly %)
-- **Filters** — All / Done Today / Missed Today + category
-- **History page** — 6-month trend bar chart, per-habit breakdown cards
-- **Settings page** — theme (light/dark/system), accent colour picker, default goal, export/import, reset
-- **Auth page** — login + register UI (localStorage-backed, backend-ready)
-- **Data export** — JSON backup + per-month CSV
-- **Data import** — restore from JSON backup
-- **Dark mode** — full CSS token system, no flash on load
-- **Responsive** — works on mobile, tablet, and desktop
-- **Keyboard shortcuts** — Escape closes modal, Ctrl+Enter saves
+---
+
+## 🛠️ Tech Stack & Architecture
+
+- **Frontend:** Vanilla HTML5, CSS3, & modern JavaScript (no frameworks or compilation steps required).
+- **Styling:** Styled using a deep cyberpunk-style dark theme with high-contrast, gold accenting (`#ffc107`), custom glassmorphism panels, and fine-tuned CSS keyframe animations for reveals and corrections.
+- **Data Layer:** Entirely self-contained within `quotes.json` with 50 carefully selected verses spanning multiple eras of mainstream and underground rap history.
+- **Code Quality:** Fully decoupled and modular logic architecture allowing for future expansions (e.g. Daily Challenges or Time-attack modes) without rewriting core render methods.
+
+---
+
+## 📝 Fair Use & Educational Disclaimer
+
+All lyrics featured in this application are short, 1-2 line excerpts used strictly for trivia, educational analysis, and general pop-culture commentary under standard Fair Use doctrines. No ownership or rights over the lyrical content is claimed; all credit goes to their respective artists and producers.

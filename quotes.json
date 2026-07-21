@@ -1,0 +1,302 @@
+[
+  {
+    "quote": "Super Nintendo, Sega Genesis / When I was dead broke, man, I couldn't picture this",
+    "artist": "The Notorious B.I.G.",
+    "song": "Juicy",
+    "decoys": ["Tupac Shakur", "Nas", "Snoop Dogg"]
+  },
+  {
+    "quote": "His palms are sweaty, knees weak, arms are heavy / There's vomit on his sweater already, mom's spaghetti",
+    "artist": "Eminem",
+    "song": "Lose Yourself",
+    "decoys": ["Jay-Z", "Lil Wayne", "50 Cent"]
+  },
+  {
+    "quote": "I got 99 problems but a bitch ain't one",
+    "artist": "Jay-Z",
+    "song": "99 Problems",
+    "decoys": ["Kanye West", "Nas", "DMX"]
+  },
+  {
+    "quote": "Today I didn't even have to use my A.K. / I got to say it was a good day",
+    "artist": "Ice Cube",
+    "song": "It Was a Good Day",
+    "decoys": ["Dr. Dre", "Eazy-E", "Snoop Dogg"]
+  },
+  {
+    "quote": "California love, we keep it rocking",
+    "artist": "Tupac Shakur",
+    "song": "California Love",
+    "decoys": ["The Notorious B.I.G.", "Ice Cube", "Dr. Dre"]
+  },
+  {
+    "quote": "Real Gs move in silence like lasagna",
+    "artist": "Lil Wayne",
+    "song": "6 Foot 7 Foot",
+    "decoys": ["Drake", "Eminem", "Kanye West"]
+  },
+  {
+    "quote": "Bitch, be humble, sit down",
+    "artist": "Kendrick Lamar",
+    "song": "HUMBLE.",
+    "decoys": ["J. Cole", "Drake", "Travis Scott"]
+  },
+  {
+    "quote": "Started from the bottom now we're here",
+    "artist": "Drake",
+    "song": "Started From the Bottom",
+    "decoys": ["Lil Wayne", "J. Cole", "Kanye West"]
+  },
+  {
+    "quote": "No such thing as a life that's better than yours",
+    "artist": "J. Cole",
+    "song": "Love Yourz",
+    "decoys": ["Kendrick Lamar", "Nas", "Logic"]
+  },
+  {
+    "quote": "I am a god, even though I'm a man of God / My whole life in the hand of God",
+    "artist": "Kanye West",
+    "song": "I Am a God",
+    "decoys": ["Jay-Z", "Kid Cudi", "Travis Scott"]
+  },
+  {
+    "quote": "It's like a jungle sometimes, it makes me wonder / How I keep from going under",
+    "artist": "Grandmaster Flash & The Furious Five",
+    "song": "The Message",
+    "decoys": ["Run-D.M.C.", "LL Cool J", "Slick Rick"]
+  },
+  {
+    "quote": "I got some red bottoms, on these bloody shoes",
+    "artist": "Cardi B",
+    "song": "Bodak Yellow",
+    "decoys": ["Nicki Minaj", "Megan Thee Stallion", "City Girls"]
+  },
+  {
+    "quote": "Go shorty, it's your birthday / We gonna party like it's your birthday",
+    "artist": "50 Cent",
+    "song": "In Da Club",
+    "decoys": ["The Game", "Eminem", "Nelly"]
+  },
+  {
+    "quote": "Sippin' on gin and juice, laid back / With my mind on my money and my money on my mind",
+    "artist": "Snoop Dogg",
+    "song": "Gin and Juice",
+    "decoys": ["Dr. Dre", "Warren G", "Ice Cube"]
+  },
+  {
+    "quote": "Cash Rules Everything Around Me, C.R.E.A.M. / Get the money, dollar dollar bill y'all",
+    "artist": "Wu-Tang Clan",
+    "song": "C.R.E.A.M.",
+    "decoys": ["Nas", "Mobb Deep", "A Tribe Called Quest"]
+  },
+  {
+    "quote": "I never sleep, 'cause sleep is the cousin of death",
+    "artist": "Nas",
+    "song": "NY State of Mind",
+    "decoys": ["Jay-Z", "The Notorious B.I.G.", "Rakim"]
+  },
+  {
+    "quote": "You can't touch this",
+    "artist": "MC Hammer",
+    "song": "U Can't Touch This",
+    "decoys": ["Vanilla Ice", "Bobby Brown", "Coolio"]
+  },
+  {
+    "quote": "I'm feeling myself, I'm feeling myself",
+    "artist": "Nicki Minaj",
+    "song": "Feeling Myself",
+    "decoys": ["Cardi B", "Megan Thee Stallion", "Lil' Kim"]
+  },
+  {
+    "quote": "I'm a savage, classy, bougie, ratchet",
+    "artist": "Megan Thee Stallion",
+    "song": "Savage",
+    "decoys": ["Cardi B", "Nicki Minaj", "Lizzo"]
+  },
+  {
+    "quote": "In the night I hear 'em talk, the coldest story ever told",
+    "artist": "Kanye West",
+    "song": "Heartless",
+    "decoys": ["Kid Cudi", "Drake", "Travis Scott"]
+  },
+  {
+    "quote": "I got broads in Atlanta / Twistin' dope, lean, and the Fanta",
+    "artist": "Desiigner",
+    "song": "Panda",
+    "decoys": ["Future", "Young Thug", "Migos"]
+  },
+  {
+    "quote": "Drop it like it's hot, drop it like it's hot",
+    "artist": "Snoop Dogg",
+    "song": "Drop It Like It's Hot",
+    "decoys": ["Pharrell Williams", "Ludacris", "Nelly"]
+  },
+  {
+    "quote": "Stop! Collaborate and listen / Ice is back with my brand new invention",
+    "artist": "Vanilla Ice",
+    "song": "Ice Ice Baby",
+    "decoys": ["MC Hammer", "Coolio", "Beastie Boys"]
+  },
+  {
+    "quote": "Walk this way, talk this way",
+    "artist": "Run-D.M.C.",
+    "song": "Walk This Way",
+    "decoys": ["Beastie Boys", "Public Enemy", "LL Cool J"]
+  },
+  {
+    "quote": "I'll be missing you, tell me why you had to go",
+    "artist": "Puff Daddy",
+    "song": "I'll Be Missing You",
+    "decoys": ["Mase", "The Notorious B.I.G.", "Busta Rhymes"]
+  },
+  {
+    "quote": "You thought I was feelin' you? / That nigga a munch",
+    "artist": "Ice Spice",
+    "song": "Munch (Feelin' U)",
+    "decoys": ["Cardi B", "GloRilla", "Latto"]
+  },
+  {
+    "quote": "First off, fuck your bitch and the clique you claim / Westside when we ride, come equipped with game",
+    "artist": "Tupac Shakur",
+    "song": "Hit 'Em Up",
+    "decoys": ["The Notorious B.I.G.", "Mobb Deep", "Ice Cube"]
+  },
+  {
+    "quote": "Ah, push it, push it good / Ah, push it, push real good",
+    "artist": "Salt-N-Pepa",
+    "song": "Push It",
+    "decoys": ["TLC", "En Vogue", "Lil' Kim"]
+  },
+  {
+    "quote": "I know you got soul / If not, then you're a dead man",
+    "artist": "Eric B. & Rakim",
+    "song": "I Know You Got Soul",
+    "decoys": ["KRS-One", "Slick Rick", "Big Daddy Kane"]
+  },
+  {
+    "quote": "Now, this is a story all about how / My life got flipped-turned upside down",
+    "artist": "Will Smith",
+    "song": "The Fresh Prince of Bel-Air",
+    "decoys": ["LL Cool J", "MC Hammer", "Coolio"]
+  },
+  {
+    "quote": "I wanna rock right now / I'm Rob Base and I came to get down",
+    "artist": "Rob Base & DJ E-Z Rock",
+    "song": "It Takes Two",
+    "decoys": ["Slick Rick", "Run-D.M.C.", "Doug E. Fresh"]
+  },
+  {
+    "quote": "Regulators, mount up!",
+    "artist": "Warren G",
+    "song": "Regulate",
+    "decoys": ["Nate Dogg", "Snoop Dogg", "Dr. Dre"]
+  },
+  {
+    "quote": "Picture me rollin' in my 500 Benz",
+    "artist": "Tupac Shakur",
+    "song": "Picture Me Rollin'",
+    "decoys": ["The Notorious B.I.G.", "Nas", "Snoop Dogg"]
+  },
+  {
+    "quote": "Check yo self before you wreck yo self",
+    "artist": "Ice Cube",
+    "song": "Check Yo Self",
+    "decoys": ["Eazy-E", "Dr. Dre", "Snoop Dogg"]
+  },
+  {
+    "quote": "Raindrop, drop top / Smokin' on cookie in the hotbox",
+    "artist": "Migos",
+    "song": "Bad and Boujee",
+    "decoys": ["Future", "Travis Scott", "Rae Sremmurd"]
+  },
+  {
+    "quote": "All my friends are dead / Push me to the edge",
+    "artist": "Lil Uzi Vert",
+    "song": "XO Tour Llif3",
+    "decoys": ["Playboi Carti", "Juice WRLD", "Travis Scott"]
+  },
+  {
+    "quote": "Lucid dreams, I still see your shadows in my room",
+    "artist": "Juice WRLD",
+    "song": "Lucid Dreams",
+    "decoys": ["Lil Uzi Vert", "Post Malone", "XXXTentacion"]
+  },
+  {
+    "quote": "I got one, two, three, four, five, six, seven, eight Ms in my bank account",
+    "artist": "21 Savage",
+    "song": "Bank Account",
+    "decoys": ["Metro Boomin", "Post Malone", "Future"]
+  },
+  {
+    "quote": "God's plan, God's plan / I hold back, sometimes I won't, yuh",
+    "artist": "Drake",
+    "song": "God's Plan",
+    "decoys": ["Kendrick Lamar", "The Weeknd", "Travis Scott"]
+  },
+  {
+    "quote": "I know when that hotline bling / That can only mean one thing",
+    "artist": "Drake",
+    "song": "Hotline Bling",
+    "decoys": ["Tory Lanez", "Kanye West", "Future"]
+  },
+  {
+    "quote": "Mo money, mo problems",
+    "artist": "The Notorious B.I.G.",
+    "song": "Mo Money Mo Problems",
+    "decoys": ["Puff Daddy", "Mase", "Jay-Z"]
+  },
+  {
+    "quote": "I like big butts and I cannot lie",
+    "artist": "Sir Mix-A-Lot",
+    "song": "Baby Got Back",
+    "decoys": ["MC Hammer", "Vanilla Ice", "Tone Loc"]
+  },
+  {
+    "quote": "Hey ya! Hey ya! / Don't want to meet your daddy, just want you in my Caddy",
+    "artist": "Outkast",
+    "song": "Hey Ya!",
+    "decoys": ["Ludacris", "Nelly", "Busta Rhymes"]
+  },
+  {
+    "quote": "It's getting hot in here, so take off all your clothes",
+    "artist": "Nelly",
+    "song": "Hot In Herre",
+    "decoys": ["Ludacris", "Chingy", "Ja Rule"]
+  },
+  {
+    "quote": "Move bitch, get out the way / Get out the way bitch, get out the way",
+    "artist": "Ludacris",
+    "song": "Move Bitch",
+    "decoys": ["Nelly", "DMX", "Lil Jon"]
+  },
+  {
+    "quote": "X gon' give it to ya / He gon' give it to ya",
+    "artist": "DMX",
+    "song": "X Gon' Give It To Ya",
+    "decoys": ["Ja Rule", "50 Cent", "Ludacris"]
+  },
+  {
+    "quote": "Will the real Slim Shady please stand up, please stand up, please stand up",
+    "artist": "Eminem",
+    "song": "The Real Slim Shady",
+    "decoys": ["Dr. Dre", "Ludacris", "Kid Rock"]
+  },
+  {
+    "quote": "First things first, I'm the realest",
+    "artist": "Iggy Azalea",
+    "song": "Fancy",
+    "decoys": ["Nicki Minaj", "Cardi B", "Charli XCX"]
+  },
+  {
+    "quote": "Fell in love with girls I only seen on a screen",
+    "artist": "J. Cole",
+    "song": "Wet Dreamz",
+    "decoys": ["Drake", "Kendrick Lamar", "Mac Miller"]
+  },
+  {
+    "quote": "Yeah, I'm gonna take my horse to the old town road",
+    "artist": "Lil Nas X",
+    "song": "Old Town Road",
+    "decoys": ["Post Malone", "Young Thug", "DaBaby"]
+  }
+]
