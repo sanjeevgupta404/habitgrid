@@ -1,62 +1,129 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <!-- Critical: viewport with viewport-fit=cover for notch/island safe areas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>HabitGrid — Habit Tracker</title>
-  <meta name="description" content="Track your habits month by month with a beautiful, spreadsheet-style grid." />
-
-  <!-- PWA manifest -->
-  <link rel="manifest" href="./manifest.json" />
-
-  <!-- Theme colour — matches manifest theme_color, updated by JS for dark mode -->
-  <meta name="theme-color" content="#6366f1" id="meta-theme-color" />
-
-  <!-- iOS / Safari PWA meta tags -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="HabitGrid" />
-  <link rel="apple-touch-icon" href="./icons/icon.svg" />
-
-  <!-- Android / Chrome -->
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="application-name" content="HabitGrid" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="./styles.css" />
-
-  <!-- Prevent FOUC: apply theme + accent before first paint -->
-  <script>
-    (function() {
-      try {
-        var s = JSON.parse(localStorage.getItem('hg_settings_v2') || '{}');
-        var t = s.theme === 'system'
-          ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-          : (s.theme || 'light');
-        document.documentElement.setAttribute('data-theme', t);
-        if (s.accentColor) {
-          document.documentElement.style.setProperty('--accent', s.accentColor);
-          var m = document.getElementById('meta-theme-color');
-          if (m) m.content = s.accentColor;
-        }
-      } catch(e) {}
-    })();
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyrikal Nerd — Rap Lyrics Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for stylized hip-hop design -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="app">
-    <!-- #topbar is prepended here by topbar.js -->
-    <div id="page-content" class="page-content"></div>
-    <!-- #bottom-nav is appended here by bottomNav.js -->
+  <div class="app-container">
+    <!-- Landing Screen -->
+    <section id="landing-screen" class="screen active">
+      <div class="glass-card text-center hero-card">
+        <div class="logo-container">
+          <span class="logo-emoji">🎤</span>
+          <h1 class="brand-title">Lyrikal <span class="accent-text">Nerd</span></h1>
+        </div>
+        <p class="tagline">Are you a true hip-hop head? Guess the correct artist behind 50 of the most iconic rap lyrics from the 90s, 2000s, 2010s, and 2020s.</p>
+
+        <!-- Error Container (Hidden by default) -->
+        <div id="error-container" class="error-panel hidden">
+          <span class="error-icon">⚠️</span>
+          <p id="error-message" class="error-text">Failed to load the lyrics database. Please make sure quotes.json is available.</p>
+        </div>
+
+        <button id="start-btn" class="btn btn-primary btn-large">Start Game</button>
+      </div>
+    </section>
+
+    <!-- Quiz Screen -->
+    <section id="quiz-screen" class="screen">
+      <!-- Status Top Bar -->
+      <div class="quiz-header">
+        <div class="status-item">
+          <span class="status-label">Progress</span>
+          <span id="progress-val" class="status-value">1/50</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Score</span>
+          <span id="score-val" class="status-value">0</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Streak</span>
+          <div class="streak-wrapper">
+            <span id="streak-val" class="status-value highlight-gold">0</span>
+            <span id="streak-fire" class="streak-emoji hidden">🔥</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ProgressBar -->
+      <div class="progress-bar-container">
+        <div id="progress-fill" class="progress-bar-fill"></div>
+      </div>
+      <div id="progress-text-indicator" class="progress-text-indicator"></div>
+
+      <!-- Main Quote Display -->
+      <div class="glass-card quote-card">
+        <div class="quote-icon">“</div>
+        <p id="quote-text" class="quote-content">Loading the bars...</p>
+        <div class="quote-icon-right">”</div>
+      </div>
+
+      <!-- Multi-Choice Options -->
+      <div class="options-container" id="options-grid">
+        <button class="option-btn" data-index="0">Option 1</button>
+        <button class="option-btn" data-index="1">Option 2</button>
+        <button class="option-btn" data-index="2">Option 3</button>
+        <button class="option-btn" data-index="3">Option 4</button>
+      </div>
+
+      <!-- Feedback & Song Reveal Panel -->
+      <div id="reveal-panel" class="reveal-panel hidden">
+        <div class="reveal-content glass-card-sm">
+          <div class="reveal-status-header">
+            <span id="reveal-status-icon">✅</span>
+            <h3 id="reveal-status-title">Correct!</h3>
+          </div>
+          <p class="reveal-song-info">
+            Song: <strong id="reveal-song-title" class="highlight-gold">...</strong> by <strong id="reveal-artist-name">...</strong>
+          </p>
+          <button id="next-btn" class="btn btn-accent">Next Verse ➔</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Screen -->
+    <section id="results-screen" class="screen">
+      <div class="glass-card text-center results-card">
+        <h2 class="results-title">Final <span class="accent-text">Report</span></h2>
+
+        <div class="stats-summary-grid">
+          <div class="summary-box">
+            <span class="summary-label">Final Score</span>
+            <span id="final-score" class="summary-val">0 / 50</span>
+          </div>
+          <div class="summary-box">
+            <span class="summary-label">Success Rate</span>
+            <span id="success-rate" class="summary-val">0%</span>
+          </div>
+          <div class="summary-box">
+            <span class="summary-label">Best Streak</span>
+            <span id="best-streak" class="summary-val highlight-gold">0</span>
+          </div>
+        </div>
+
+        <div class="rank-container">
+          <span class="rank-label">Nerd Status</span>
+          <h3 id="rank-title" class="rank-title-text">G.O.A.T.</h3>
+          <p id="rank-description" class="rank-desc">Calculating your position in hip hop lore...</p>
+        </div>
+
+        <button id="restart-btn" class="btn btn-primary btn-large">Play Again</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="app-footer text-center">
+      <p>Made for hip-hop heads • Lyrics used under fair use for educational/trivia purposes.</p>
+    </footer>
   </div>
 
-  <!-- Toast portal — outside #app so z-index is always on top -->
-  <div id="toast-container"></div>
-
-  <script type="module" src="./src/main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

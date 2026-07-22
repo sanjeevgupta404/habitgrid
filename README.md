@@ -1,52 +1,85 @@
-# HabitGrid v2
+# Lyrikal Nerd 🎤
 
-A full-featured productivity and habit tracking app. Frontend-only, no build tools required — open `index.html` in any modern browser.
+Are you a true hip-hop head? **Lyrikal Nerd** is an interactive, Wordle-inspired rap lyrics trivia guessing game that tests your knowledge of the most iconic rap verses from the 90s, 2000s, 2010s, and 2020s.
 
-## Architecture
+Instead of relying on fully static quotes, **Lyrikal Nerd** now pulls lyric snippets **live from the Musixmatch API** dynamically at runtime!
 
+---
+
+## ⚡ Concept
+
+Players are presented with a short 1-2 line lyric snippet fetched dynamically from Musixmatch (without artist names or context). You must guess which hip-hop artist said it from four multiple-choice options.
+- **Dynamic Pool:** Loaded from a comprehensive catalog of 200 famous mainstream tracks in `songs.json`.
+- **Score Tracker:** Keep track of correct answers.
+- **Streak Tracker:** Build high streaks to unlock the "fire" status (🔥) and secure bragging rights.
+- **Nerd Status Tiering:** At the end of the session, receive your ranking based on performance, ranging from **Ghostwriter Target** up to the ultimate **G.O.A.T.** tier!
+
+---
+
+## 🔑 Musixmatch API Integration & Setup
+
+To fetch real lyric snippets live, you need to sign up for a free developer key and configure it inside the game's script.
+
+### 1. Get a Free API Key
+1. Go to the [Musixmatch Developer Portal](https://developer.musixmatch.com/).
+2. Sign up for a free developer account.
+3. Generate or retrieve your **API Key** from your developer dashboard.
+
+### 2. Configure the App
+Open `script.js` in your editor and locate the constant at the very top:
+```javascript
+const MUSIXMATCH_API_KEY = "YOUR_KEY_HERE";
 ```
-src/
-├── core/
-│   ├── constants.js   — All fixed values, route names, STORAGE_KEYS
-│   ├── api.js         — Data layer abstraction (localStorage now, swap for fetch later)
-│   ├── store.js       — Central state + pub/sub observer + all async actions
-│   ├── router.js      — Hash-based SPA router with auth guards
-│   └── theme.js       — Dark/light/system theme manager
-├── utils/
-│   ├── date.js        — Pure date helpers, no side effects
-│   ├── stats.js       — Pure analytics (streaks, totals, trends)
-│   └── io.js          — File export (JSON/CSV) and import
-├── components/
-│   ├── shared.js      — Reusable HTML primitives (stat card, progress bar, badges)
-│   ├── modal.js       — Modal manager with stack support
-│   ├── habitModal.js  — Add/Edit habit form (Promise-based)
-│   ├── toast.js       — Toasts + confetti
-│   └── topbar.js      — Sticky nav bar (subscribes to store)
-├── pages/
-│   ├── auth.js        — Login / Register (auth-ready structure)
-│   ├── tracker.js     — Main monthly habit grid
-│   ├── history.js     — Monthly history + trend chart
-│   └── settings.js    — Preferences, export/import, reset
-└── main.js            — Bootstrap: store → theme → topbar → router
+Replace `"YOUR_KEY_HERE"` with your actual Musixmatch API key, like this:
+```javascript
+const MUSIXMATCH_API_KEY = "1a2b3c4d5e6f7g8h9i0j...";
 ```
 
-## Adding a Backend
+> ⚠️ **Security Note:** Since this is a static frontend web application with no server backend, the API key is visible client-side in the browser. While this is perfectly acceptable and expected for a portfolio/demo project running on GitHub Pages, it is **not** recommended for production use with paid, high-quota, or rate-sensitive keys.
 
-The `src/core/api.js` file is the only layer that needs changing:
-- Replace `readKey`/`writeKey` with `fetch()` calls in `AuthAPI`, `HabitsAPI`, `CompletionsAPI`
-- Keep `store.js`, all pages, and all components exactly as-is
-- Add request headers (e.g. `Authorization: Bearer <token>`) in `api.js` once you have real sessions
+### 🌐 Playable Demo/Offline Mode
+If the API key is left as `"YOUR_KEY_HERE"` or is empty, the game will **automatically run in a simulated offline mode** using high-quality mock lyric snippets for the most iconic tracks. If the live API fails due to rate limits or missing lyrics on a particular track, it will silently choose another song from the pool or use the fallback generator to keep your gameplay entirely fluid and uninterrupted!
 
-## Features
+---
 
-- **Monthly habit grid** — sticky name column, week groupings, day toggles
-- **Dashboard** — 5 live stat cards (habits, today, streaks, monthly %)
-- **Filters** — All / Done Today / Missed Today + category
-- **History page** — 6-month trend bar chart, per-habit breakdown cards
-- **Settings page** — theme (light/dark/system), accent colour picker, default goal, export/import, reset
-- **Auth page** — login + register UI (localStorage-backed, backend-ready)
-- **Data export** — JSON backup + per-month CSV
-- **Data import** — restore from JSON backup
-- **Dark mode** — full CSS token system, no flash on load
-- **Responsive** — works on mobile, tablet, and desktop
-- **Keyboard shortcuts** — Escape closes modal, Ctrl+Enter saves
+## 🚀 How to Run Locally
+
+Since this app uses vanilla JavaScript with modern Web APIs (`fetch` for retrieving local JSON files), most modern browsers block direct local file fetching (`file://` protocol) due to CORS security policies.
+
+To run it locally, run a simple local web server in the project directory:
+
+### Option 1: Python (Recommended)
+If you have Python installed, open your terminal in the repository root and run:
+```bash
+python3 -m http.server 3000
+```
+Then, open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Option 2: Node.js (npx)
+If you have Node.js installed:
+```bash
+npx serve .
+```
+Then, visit [http://localhost:3000](http://localhost:3000) (or the port specified).
+
+---
+
+## 📸 Demo Preview
+
+*(A demo of the application flow can be placed here once deployed)*
+![Lyrikal Nerd Demo Placeholder](demo-placeholder.png)
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+- **Frontend:** Vanilla HTML5, CSS3, & modern JavaScript (no frameworks or compilation steps required).
+- **Styling:** Styled using a deep cyberpunk-style dark theme with high-contrast, gold accenting (`#ffc107`), custom glassmorphism panels, and fine-tuned CSS keyframe animations for reveals and corrections.
+- **Data Layer:** `songs.json` houses the metadata for 200 mainstream tracks spanning multiple eras. Live lyrics are fetched via **JSONP format** to bypass browser CORS restrictions directly on the client side.
+- **Code Quality:** Modular, async-ready design that gracefully handles API latency, rate limits, and network dropouts with local failover.
+
+---
+
+## 📝 Fair Use & Educational Disclaimer
+
+All lyrics featured in this application are short, 1-2 line excerpts retrieved dynamically from Musixmatch and used strictly for trivia, educational analysis, and general pop-culture commentary under standard Fair Use doctrines. No ownership or rights over the lyrical content is claimed; all credit goes to their respective artists and copyright owners.
