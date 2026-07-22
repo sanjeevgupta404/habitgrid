@@ -1,0 +1,1802 @@
+[
+  {
+    "artist": "2Pac",
+    "song": "California Love",
+    "decoys": [
+      "Flo Rida",
+      "Mobb Deep",
+      "Outkast"
+    ]
+  },
+  {
+    "artist": "2Pac",
+    "song": "Dear Mama",
+    "decoys": [
+      "Ice Cube",
+      "Quavo",
+      "Dr. Dre"
+    ]
+  },
+  {
+    "artist": "2Pac",
+    "song": "Changes",
+    "decoys": [
+      "Shaboozey",
+      "Chingy",
+      "Kanye West"
+    ]
+  },
+  {
+    "artist": "2Pac",
+    "song": "Hail Mary",
+    "decoys": [
+      "Central Cee",
+      "Jay-Z",
+      "Cam'ron"
+    ]
+  },
+  {
+    "artist": "The Notorious B.I.G.",
+    "song": "Juicy",
+    "decoys": [
+      "Lil Baby",
+      "Nelly",
+      "Mac Miller"
+    ]
+  },
+  {
+    "artist": "The Notorious B.I.G.",
+    "song": "Big Poppa",
+    "decoys": [
+      "Warren G",
+      "Salt-N-Pepa",
+      "Polo G"
+    ]
+  },
+  {
+    "artist": "The Notorious B.I.G.",
+    "song": "Hypnotize",
+    "decoys": [
+      "Lil Tjay",
+      "MC Hammer",
+      "Method Man"
+    ]
+  },
+  {
+    "artist": "The Notorious B.I.G.",
+    "song": "Mo Money Mo Problems",
+    "decoys": [
+      "Lupe Fiasco",
+      "Travis Scott",
+      "Mike Jones"
+    ]
+  },
+  {
+    "artist": "Nas",
+    "song": "N.Y. State of Mind",
+    "decoys": [
+      "Big Pun",
+      "Ja Rule",
+      "N.W.A"
+    ]
+  },
+  {
+    "artist": "Nas",
+    "song": "If I Ruled the World",
+    "decoys": [
+      "DMX",
+      "XXXTentacion",
+      "Travis Scott"
+    ]
+  },
+  {
+    "artist": "Nas",
+    "song": "The World Is Yours",
+    "decoys": [
+      "Cam'ron",
+      "The Game",
+      "Tommy Richman"
+    ]
+  },
+  {
+    "artist": "Jay-Z",
+    "song": "Hard Knock Life",
+    "decoys": [
+      "House of Pain",
+      "Roddy Ricch",
+      "N.W.A"
+    ]
+  },
+  {
+    "artist": "Jay-Z",
+    "song": "Dead Presidents II",
+    "decoys": [
+      "Offset",
+      "J. Cole",
+      "Yeat"
+    ]
+  },
+  {
+    "artist": "Dr. Dre",
+    "song": "Nuthin' But A G Thang",
+    "decoys": [
+      "Nicki Minaj",
+      "Joey Bada$$",
+      "Lupe Fiasco"
+    ]
+  },
+  {
+    "artist": "Dr. Dre",
+    "song": "Still D.R.E.",
+    "decoys": [
+      "Hurricane Chris",
+      "Mac Miller",
+      "Wu-Tang Clan"
+    ]
+  },
+  {
+    "artist": "Dr. Dre",
+    "song": "Forgot About Dre",
+    "decoys": [
+      "Travis Scott",
+      "Hurricane Chris",
+      "Fat Joe"
+    ]
+  },
+  {
+    "artist": "Snoop Dogg",
+    "song": "Gin and Juice",
+    "decoys": [
+      "Kendrick Lamar",
+      "Dr. Dre",
+      "Post Malone"
+    ]
+  },
+  {
+    "artist": "Snoop Dogg",
+    "song": "Who Am I? (What's My Name?)",
+    "decoys": [
+      "Ying Yang Twins",
+      "GloRilla",
+      "Fetty Wap"
+    ]
+  },
+  {
+    "artist": "Outkast",
+    "song": "Ms. Jackson",
+    "decoys": [
+      "Nicki Minaj",
+      "Fetty Wap",
+      "Mike Jones"
+    ]
+  },
+  {
+    "artist": "Outkast",
+    "song": "Rosa Parks",
+    "decoys": [
+      "Craig Mack",
+      "Tommy Richman",
+      "Tyler, The Creator"
+    ]
+  },
+  {
+    "artist": "Wu-Tang Clan",
+    "song": "C.R.E.A.M.",
+    "decoys": [
+      "Chamillionaire",
+      "Post Malone",
+      "Wiz Khalifa"
+    ]
+  },
+  {
+    "artist": "Wu-Tang Clan",
+    "song": "Protect Ya Neck",
+    "decoys": [
+      "Yung Joc",
+      "Chamillionaire",
+      "House of Pain"
+    ]
+  },
+  {
+    "artist": "Ice Cube",
+    "song": "It Was a Good Day",
+    "decoys": [
+      "Salt-N-Pepa",
+      "Wiz Khalifa",
+      "J. Cole"
+    ]
+  },
+  {
+    "artist": "Ice Cube",
+    "song": "Check Yo Self",
+    "decoys": [
+      "Juvenile",
+      "A$AP Rocky",
+      "Mac Miller"
+    ]
+  },
+  {
+    "artist": "Coolio",
+    "song": "Gangsta's Paradise",
+    "decoys": [
+      "Fetty Wap",
+      "GloRilla",
+      "House of Pain"
+    ]
+  },
+  {
+    "artist": "Warren G",
+    "song": "Regulate",
+    "decoys": [
+      "GloRilla",
+      "Pitbull",
+      "House of Pain"
+    ]
+  },
+  {
+    "artist": "LL Cool J",
+    "song": "Mama Said Knock You Out",
+    "decoys": [
+      "Big Pun",
+      "Young Thug",
+      "Chingy"
+    ]
+  },
+  {
+    "artist": "A Tribe Called Quest",
+    "song": "Can I Kick It?",
+    "decoys": [
+      "Don Toliver",
+      "Central Cee",
+      "Tommy Richman"
+    ]
+  },
+  {
+    "artist": "A Tribe Called Quest",
+    "song": "Scenario",
+    "decoys": [
+      "Missy Elliott",
+      "Childish Gambino",
+      "Lil Jon"
+    ]
+  },
+  {
+    "artist": "Mobb Deep",
+    "song": "Shook Ones, Pt. II",
+    "decoys": [
+      "Pop Smoke",
+      "Big Sean",
+      "Soulja Boy"
+    ]
+  },
+  {
+    "artist": "Fugees",
+    "song": "Killing Me Softly",
+    "decoys": [
+      "J. Cole",
+      "2Pac",
+      "Beastie Boys"
+    ]
+  },
+  {
+    "artist": "Missy Elliott",
+    "song": "The Rain (Supa Dupa Fly)",
+    "decoys": [
+      "Tyler, The Creator",
+      "Cardi B",
+      "Soulja Boy"
+    ]
+  },
+  {
+    "artist": "Busta Rhymes",
+    "song": "Woo Hah!! Got You All in Check",
+    "decoys": [
+      "Salt-N-Pepa",
+      "Vanilla Ice",
+      "The Game"
+    ]
+  },
+  {
+    "artist": "Big Pun",
+    "song": "Still Not a Player",
+    "decoys": [
+      "Hurricane Chris",
+      "Clipse",
+      "Macklemore"
+    ]
+  },
+  {
+    "artist": "DMX",
+    "song": "Ruff Ryders' Anthem",
+    "decoys": [
+      "Juice WRLD",
+      "Future",
+      "Wiz Khalifa"
+    ]
+  },
+  {
+    "artist": "DMX",
+    "song": "Party Up (Up in Here)",
+    "decoys": [
+      "Puff Daddy",
+      "Ludacris",
+      "Lil Jon"
+    ]
+  },
+  {
+    "artist": "Beastie Boys",
+    "song": "Intergalactic",
+    "decoys": [
+      "Soulja Boy",
+      "House of Pain",
+      "Clipse"
+    ]
+  },
+  {
+    "artist": "MC Hammer",
+    "song": "U Can't Touch This",
+    "decoys": [
+      "Lil Uzi Vert",
+      "Tommy Richman",
+      "Meek Mill"
+    ]
+  },
+  {
+    "artist": "Vanilla Ice",
+    "song": "Ice Ice Baby",
+    "decoys": [
+      "Beastie Boys",
+      "Lil Wayne",
+      "Nas"
+    ]
+  },
+  {
+    "artist": "Salt-N-Pepa",
+    "song": "Shoop",
+    "decoys": [
+      "NLE Choppa",
+      "21 Savage",
+      "Kendrick Lamar"
+    ]
+  },
+  {
+    "artist": "Lauryn Hill",
+    "song": "Doo Wop (That Thing)",
+    "decoys": [
+      "Craig Mack",
+      "GloRilla",
+      "Juvenile"
+    ]
+  },
+  {
+    "artist": "Puff Daddy",
+    "song": "I'll Be Missing You",
+    "decoys": [
+      "Lupe Fiasco",
+      "XXXTentacion",
+      "Chingy"
+    ]
+  },
+  {
+    "artist": "Juvenile",
+    "song": "Back That Azz Up",
+    "decoys": [
+      "Fetty Wap",
+      "Sexyy Red",
+      "Polo G"
+    ]
+  },
+  {
+    "artist": "Method Man",
+    "song": "I'll Be There for You",
+    "decoys": [
+      "Kanye West",
+      "French Montana",
+      "Joey Bada$$"
+    ]
+  },
+  {
+    "artist": "Craig Mack",
+    "song": "Flava in Ya Ear",
+    "decoys": [
+      "Lil Yachty",
+      "Puff Daddy",
+      "Bobby Shmurda"
+    ]
+  },
+  {
+    "artist": "House of Pain",
+    "song": "Jump Around",
+    "decoys": [
+      "Killer Mike",
+      "Central Cee",
+      "Ying Yang Twins"
+    ]
+  },
+  {
+    "artist": "Cypress Hill",
+    "song": "Insane in the Brain",
+    "decoys": [
+      "Eminem",
+      "Shaboozey",
+      "Nelly"
+    ]
+  },
+  {
+    "artist": "N.W.A",
+    "song": "Straight Outta Compton",
+    "decoys": [
+      "Tyga",
+      "Yung Joc",
+      "Flo Rida"
+    ]
+  },
+  {
+    "artist": "Geto Boys",
+    "song": "Mind Playing Tricks on Me",
+    "decoys": [
+      "N.W.A",
+      "Travis Scott",
+      "LL Cool J"
+    ]
+  },
+  {
+    "artist": "Public Enemy",
+    "song": "Fight the Power",
+    "decoys": [
+      "Offset",
+      "Lupe Fiasco",
+      "Missy Elliott"
+    ]
+  },
+  {
+    "artist": "Eminem",
+    "song": "Lose Yourself",
+    "decoys": [
+      "Chingy",
+      "Paul Wall",
+      "Tyga"
+    ]
+  },
+  {
+    "artist": "Eminem",
+    "song": "Without Me",
+    "decoys": [
+      "Flo Rida",
+      "Yung Joc",
+      "Flo Milli"
+    ]
+  },
+  {
+    "artist": "Eminem",
+    "song": "The Real Slim Shady",
+    "decoys": [
+      "Juice WRLD",
+      "Wu-Tang Clan",
+      "Paul Wall"
+    ]
+  },
+  {
+    "artist": "Eminem",
+    "song": "Stan",
+    "decoys": [
+      "Lil Wayne",
+      "MC Hammer",
+      "A Tribe Called Quest"
+    ]
+  },
+  {
+    "artist": "50 Cent",
+    "song": "In Da Club",
+    "decoys": [
+      "Ice Spice",
+      "A Tribe Called Quest",
+      "Cardi B"
+    ]
+  },
+  {
+    "artist": "50 Cent",
+    "song": "21 Questions",
+    "decoys": [
+      "Chingy",
+      "Cypress Hill",
+      "Central Cee"
+    ]
+  },
+  {
+    "artist": "50 Cent",
+    "song": "Candy Shop",
+    "decoys": [
+      "Gunna",
+      "Vanilla Ice",
+      "Polo G"
+    ]
+  },
+  {
+    "artist": "Kanye West",
+    "song": "Gold Digger",
+    "decoys": [
+      "T.I.",
+      "Busta Rhymes",
+      "Common"
+    ]
+  },
+  {
+    "artist": "Kanye West",
+    "song": "Jesus Walks",
+    "decoys": [
+      "Vanilla Ice",
+      "Young Thug",
+      "Jim Jones"
+    ]
+  },
+  {
+    "artist": "Kanye West",
+    "song": "Stronger",
+    "decoys": [
+      "Pop Smoke",
+      "Polo G",
+      "French Montana"
+    ]
+  },
+  {
+    "artist": "Kanye West",
+    "song": "Heartless",
+    "decoys": [
+      "Vanilla Ice",
+      "Ying Yang Twins",
+      "Mike Jones"
+    ]
+  },
+  {
+    "artist": "Lil Wayne",
+    "song": "A Milli",
+    "decoys": [
+      "Fat Joe",
+      "2Pac",
+      "Kendrick Lamar"
+    ]
+  },
+  {
+    "artist": "Lil Wayne",
+    "song": "Lollipop",
+    "decoys": [
+      "Beastie Boys",
+      "Sexyy Red",
+      "Killer Mike"
+    ]
+  },
+  {
+    "artist": "Lil Wayne",
+    "song": "Go DJ",
+    "decoys": [
+      "Big Sean",
+      "Nas",
+      "Big Pun"
+    ]
+  },
+  {
+    "artist": "Nelly",
+    "song": "Hot in Herre",
+    "decoys": [
+      "Mac Miller",
+      "Offset",
+      "Public Enemy"
+    ]
+  },
+  {
+    "artist": "Nelly",
+    "song": "Dilemma",
+    "decoys": [
+      "Warren G",
+      "A Tribe Called Quest",
+      "Cordae"
+    ]
+  },
+  {
+    "artist": "Ludacris",
+    "song": "What's Your Fantasy",
+    "decoys": [
+      "Lupe Fiasco",
+      "Lil Baby",
+      "Flo Rida"
+    ]
+  },
+  {
+    "artist": "Ludacris",
+    "song": "Rollout (My Business)",
+    "decoys": [
+      "The Game",
+      "Nicki Minaj",
+      "Warren G"
+    ]
+  },
+  {
+    "artist": "Outkast",
+    "song": "Hey Ya!",
+    "decoys": [
+      "Don Toliver",
+      "The Notorious B.I.G.",
+      "Ja Rule"
+    ]
+  },
+  {
+    "artist": "Outkast",
+    "song": "B.O.B.",
+    "decoys": [
+      "The Notorious B.I.G.",
+      "Lupe Fiasco",
+      "Tyler, The Creator"
+    ]
+  },
+  {
+    "artist": "Jay-Z",
+    "song": "Empire State of Mind",
+    "decoys": [
+      "Fetty Wap",
+      "Central Cee",
+      "Vanilla Ice"
+    ]
+  },
+  {
+    "artist": "Jay-Z",
+    "song": "99 Problems",
+    "decoys": [
+      "Lupe Fiasco",
+      "Lauryn Hill",
+      "Ludacris"
+    ]
+  },
+  {
+    "artist": "Jay-Z",
+    "song": "Izzo (H.O.V.A.)",
+    "decoys": [
+      "Paul Wall",
+      "Sexyy Red",
+      "Outkast"
+    ]
+  },
+  {
+    "artist": "T.I.",
+    "song": "What You Know",
+    "decoys": [
+      "Outkast",
+      "Juvenile",
+      "Bobby Shmurda"
+    ]
+  },
+  {
+    "artist": "T.I.",
+    "song": "Live Your Life",
+    "decoys": [
+      "House of Pain",
+      "Cardi B",
+      "Gunna"
+    ]
+  },
+  {
+    "artist": "Chamillionaire",
+    "song": "Ridin'",
+    "decoys": [
+      "N.W.A",
+      "Ludacris",
+      "Big Pun"
+    ]
+  },
+  {
+    "artist": "Snoop Dogg",
+    "song": "Drop It Like It's Hot",
+    "decoys": [
+      "Meek Mill",
+      "Shaboozey",
+      "Cordae"
+    ]
+  },
+  {
+    "artist": "Clipse",
+    "song": "Grindin'",
+    "decoys": [
+      "NLE Choppa",
+      "Desiigner",
+      "Central Cee"
+    ]
+  },
+  {
+    "artist": "Missy Elliott",
+    "song": "Work It",
+    "decoys": [
+      "LL Cool J",
+      "Meek Mill",
+      "T.I."
+    ]
+  },
+  {
+    "artist": "Missy Elliott",
+    "song": "Get Ur Freak On",
+    "decoys": [
+      "Geto Boys",
+      "Coolio",
+      "Bobby Shmurda"
+    ]
+  },
+  {
+    "artist": "Busta Rhymes",
+    "song": "Pass the Courvoisier, Part II",
+    "decoys": [
+      "Ja Rule",
+      "Ludacris",
+      "NLE Choppa"
+    ]
+  },
+  {
+    "artist": "Ja Rule",
+    "song": "Always on Time",
+    "decoys": [
+      "Eminem",
+      "Cardi B",
+      "N.W.A"
+    ]
+  },
+  {
+    "artist": "Fat Joe",
+    "song": "Lean Back",
+    "decoys": [
+      "Jim Jones",
+      "Young Thug",
+      "J. Cole"
+    ]
+  },
+  {
+    "artist": "Cam'ron",
+    "song": "Oh Boy",
+    "decoys": [
+      "Jim Jones",
+      "Ludacris",
+      "Lil Tjay"
+    ]
+  },
+  {
+    "artist": "The Game",
+    "song": "Hate It or Love It",
+    "decoys": [
+      "Lil Yachty",
+      "Kendrick Lamar",
+      "Don Toliver"
+    ]
+  },
+  {
+    "artist": "Common",
+    "song": "Go!",
+    "decoys": [
+      "Puff Daddy",
+      "House of Pain",
+      "NLE Choppa"
+    ]
+  },
+  {
+    "artist": "Lupe Fiasco",
+    "song": "Kick, Push",
+    "decoys": [
+      "Cardi B",
+      "Yeat",
+      "Nicki Minaj"
+    ]
+  },
+  {
+    "artist": "Lupe Fiasco",
+    "song": "Superstar",
+    "decoys": [
+      "Roddy Ricch",
+      "Lil Tjay",
+      "Meek Mill"
+    ]
+  },
+  {
+    "artist": "Lil Jon",
+    "song": "Get Low",
+    "decoys": [
+      "Missy Elliott",
+      "Megan Thee Stallion",
+      "Young Thug"
+    ]
+  },
+  {
+    "artist": "Ying Yang Twins",
+    "song": "Salt Shaker",
+    "decoys": [
+      "Mac Miller",
+      "Lauryn Hill",
+      "LL Cool J"
+    ]
+  },
+  {
+    "artist": "Chingy",
+    "song": "Right Thurr",
+    "decoys": [
+      "Dr. Dre",
+      "XXXTentacion",
+      "Macklemore"
+    ]
+  },
+  {
+    "artist": "Paul Wall",
+    "song": "Grillz",
+    "decoys": [
+      "Flo Rida",
+      "T.I.",
+      "Cordae"
+    ]
+  },
+  {
+    "artist": "Mike Jones",
+    "song": "Still Tippin'",
+    "decoys": [
+      "2Pac",
+      "DMX",
+      "Ludacris"
+    ]
+  },
+  {
+    "artist": "Hurricane Chris",
+    "song": "A Bay Bay",
+    "decoys": [
+      "Drake",
+      "French Montana",
+      "Ying Yang Twins"
+    ]
+  },
+  {
+    "artist": "Soulja Boy",
+    "song": "Crank That",
+    "decoys": [
+      "Busta Rhymes",
+      "Missy Elliott",
+      "Juvenile"
+    ]
+  },
+  {
+    "artist": "Flo Rida",
+    "song": "Low",
+    "decoys": [
+      "NLE Choppa",
+      "Lil Baby",
+      "Ice Cube"
+    ]
+  },
+  {
+    "artist": "Pitbull",
+    "song": "I Know You Want Me",
+    "decoys": [
+      "Sexyy Red",
+      "Coolio",
+      "Roddy Ricch"
+    ]
+  },
+  {
+    "artist": "Jim Jones",
+    "song": "We Fly High",
+    "decoys": [
+      "Lil Baby",
+      "Fat Joe",
+      "Coi Leray"
+    ]
+  },
+  {
+    "artist": "Yung Joc",
+    "song": "It's Goin' Down",
+    "decoys": [
+      "Salt-N-Pepa",
+      "Gunna",
+      "21 Savage"
+    ]
+  },
+  {
+    "artist": "Common",
+    "song": "The Light",
+    "decoys": [
+      "Ludacris",
+      "Paul Wall",
+      "Latto"
+    ]
+  },
+  {
+    "artist": "Drake",
+    "song": "Hotline Bling",
+    "decoys": [
+      "Craig Mack",
+      "The Notorious B.I.G.",
+      "21 Savage"
+    ]
+  },
+  {
+    "artist": "Drake",
+    "song": "God's Plan",
+    "decoys": [
+      "Shaboozey",
+      "Salt-N-Pepa",
+      "Doja Cat"
+    ]
+  },
+  {
+    "artist": "Drake",
+    "song": "Best I Ever Had",
+    "decoys": [
+      "Busta Rhymes",
+      "French Montana",
+      "Vanilla Ice"
+    ]
+  },
+  {
+    "artist": "Drake",
+    "song": "One Dance",
+    "decoys": [
+      "Dr. Dre",
+      "2Pac",
+      "Wiz Khalifa"
+    ]
+  },
+  {
+    "artist": "Kendrick Lamar",
+    "song": "HUMBLE.",
+    "decoys": [
+      "Young Thug",
+      "Cam'ron",
+      "Nelly"
+    ]
+  },
+  {
+    "artist": "Kendrick Lamar",
+    "song": "Swimming Pools (Drank)",
+    "decoys": [
+      "XXXTentacion",
+      "Method Man",
+      "Clipse"
+    ]
+  },
+  {
+    "artist": "Kendrick Lamar",
+    "song": "Alright",
+    "decoys": [
+      "House of Pain",
+      "Vanilla Ice",
+      "Snoop Dogg"
+    ]
+  },
+  {
+    "artist": "J. Cole",
+    "song": "No Role Modelz",
+    "decoys": [
+      "Tyler, The Creator",
+      "Missy Elliott",
+      "Yeat"
+    ]
+  },
+  {
+    "artist": "J. Cole",
+    "song": "Wet Dreamz",
+    "decoys": [
+      "21 Savage",
+      "Lil Baby",
+      "Pitbull"
+    ]
+  },
+  {
+    "artist": "J. Cole",
+    "song": "Middle Child",
+    "decoys": [
+      "Hurricane Chris",
+      "Gunna",
+      "XXXTentacion"
+    ]
+  },
+  {
+    "artist": "Nicki Minaj",
+    "song": "Super Bass",
+    "decoys": [
+      "Common",
+      "Kanye West",
+      "Big Pun"
+    ]
+  },
+  {
+    "artist": "Nicki Minaj",
+    "song": "Starships",
+    "decoys": [
+      "Sexyy Red",
+      "Vanilla Ice",
+      "Big Sean"
+    ]
+  },
+  {
+    "artist": "Nicki Minaj",
+    "song": "Anaconda",
+    "decoys": [
+      "2Pac",
+      "Snoop Dogg",
+      "Roddy Ricch"
+    ]
+  },
+  {
+    "artist": "Kanye West",
+    "song": "Power",
+    "decoys": [
+      "Wiz Khalifa",
+      "J. Cole",
+      "Cypress Hill"
+    ]
+  },
+  {
+    "artist": "Kanye West",
+    "song": "Monster",
+    "decoys": [
+      "Gunna",
+      "XXXTentacion",
+      "Rae Sremmurd"
+    ]
+  },
+  {
+    "artist": "Mac Miller",
+    "song": "Donald Trump",
+    "decoys": [
+      "Rae Sremmurd",
+      "Beastie Boys",
+      "Megan Thee Stallion"
+    ]
+  },
+  {
+    "artist": "Mac Miller",
+    "song": "Self Care",
+    "decoys": [
+      "The Notorious B.I.G.",
+      "Central Cee",
+      "T.I."
+    ]
+  },
+  {
+    "artist": "Tyler, The Creator",
+    "song": "Yonkers",
+    "decoys": [
+      "Don Toliver",
+      "Childish Gambino",
+      "Craig Mack"
+    ]
+  },
+  {
+    "artist": "Tyler, The Creator",
+    "song": "EARFQUAKE",
+    "decoys": [
+      "Lupe Fiasco",
+      "Yung Joc",
+      "Snoop Dogg"
+    ]
+  },
+  {
+    "artist": "Travis Scott",
+    "song": "SICKO MODE",
+    "decoys": [
+      "MC Hammer",
+      "Post Malone",
+      "Outkast"
+    ]
+  },
+  {
+    "artist": "Travis Scott",
+    "song": "Antidote",
+    "decoys": [
+      "Future",
+      "Nelly",
+      "Polo G"
+    ]
+  },
+  {
+    "artist": "Future",
+    "song": "Mask Off",
+    "decoys": [
+      "Outkast",
+      "Yung Joc",
+      "Eminem"
+    ]
+  },
+  {
+    "artist": "Future",
+    "song": "Low Life",
+    "decoys": [
+      "A Tribe Called Quest",
+      "Snoop Dogg",
+      "Cam'ron"
+    ]
+  },
+  {
+    "artist": "Cardi B",
+    "song": "Bodak Yellow",
+    "decoys": [
+      "XXXTentacion",
+      "Doja Cat",
+      "N.W.A"
+    ]
+  },
+  {
+    "artist": "Cardi B",
+    "song": "I Like It",
+    "decoys": [
+      "Chingy",
+      "Quavo",
+      "Pop Smoke"
+    ]
+  },
+  {
+    "artist": "Childish Gambino",
+    "song": "Redbone",
+    "decoys": [
+      "Hurricane Chris",
+      "Flo Milli",
+      "Salt-N-Pepa"
+    ]
+  },
+  {
+    "artist": "Childish Gambino",
+    "song": "This Is America",
+    "decoys": [
+      "Megan Thee Stallion",
+      "Lil Yachty",
+      "Don Toliver"
+    ]
+  },
+  {
+    "artist": "A$AP Rocky",
+    "song": "Peso",
+    "decoys": [
+      "House of Pain",
+      "N.W.A",
+      "Tyler, The Creator"
+    ]
+  },
+  {
+    "artist": "A$AP Rocky",
+    "song": "F**kin' Problems",
+    "decoys": [
+      "Yeat",
+      "Beastie Boys",
+      "Snoop Dogg"
+    ]
+  },
+  {
+    "artist": "Post Malone",
+    "song": "White Iverson",
+    "decoys": [
+      "Nelly",
+      "A$AP Rocky",
+      "NLE Choppa"
+    ]
+  },
+  {
+    "artist": "Post Malone",
+    "song": "Rockstar",
+    "decoys": [
+      "Tyga",
+      "J. Cole",
+      "Lil Baby"
+    ]
+  },
+  {
+    "artist": "Logic",
+    "song": "1-800-273-8255",
+    "decoys": [
+      "Nelly",
+      "Drake",
+      "Craig Mack"
+    ]
+  },
+  {
+    "artist": "Wiz Khalifa",
+    "song": "Black and Yellow",
+    "decoys": [
+      "The Game",
+      "Desiigner",
+      "Killer Mike"
+    ]
+  },
+  {
+    "artist": "Wiz Khalifa",
+    "song": "See You Again",
+    "decoys": [
+      "MC Hammer",
+      "NLE Choppa",
+      "Ice Spice"
+    ]
+  },
+  {
+    "artist": "Migos",
+    "song": "Bad and Boujee",
+    "decoys": [
+      "Ice Cube",
+      "Jay-Z",
+      "Killer Mike"
+    ]
+  },
+  {
+    "artist": "Macklemore",
+    "song": "Thrift Shop",
+    "decoys": [
+      "Ja Rule",
+      "French Montana",
+      "Travis Scott"
+    ]
+  },
+  {
+    "artist": "Lil Uzi Vert",
+    "song": "XO Tour Llif3",
+    "decoys": [
+      "Salt-N-Pepa",
+      "Nas",
+      "Young Thug"
+    ]
+  },
+  {
+    "artist": "Juice WRLD",
+    "song": "Lucid Dreams",
+    "decoys": [
+      "Mike Jones",
+      "Nas",
+      "Ying Yang Twins"
+    ]
+  },
+  {
+    "artist": "XXXTentacion",
+    "song": "SAD!",
+    "decoys": [
+      "Pop Smoke",
+      "Tyga",
+      "Jack Harlow"
+    ]
+  },
+  {
+    "artist": "Young Thug",
+    "song": "Stoner",
+    "decoys": [
+      "Fetty Wap",
+      "Soulja Boy",
+      "Macklemore"
+    ]
+  },
+  {
+    "artist": "Big Sean",
+    "song": "Bounce Back",
+    "decoys": [
+      "Kanye West",
+      "Juice WRLD",
+      "Cypress Hill"
+    ]
+  },
+  {
+    "artist": "Big Sean",
+    "song": "I Don't F**k With You",
+    "decoys": [
+      "Coolio",
+      "Ice Spice",
+      "Bobby Shmurda"
+    ]
+  },
+  {
+    "artist": "Meek Mill",
+    "song": "Dreams and Nightmares",
+    "decoys": [
+      "Yeat",
+      "Flo Rida",
+      "J. Cole"
+    ]
+  },
+  {
+    "artist": "21 Savage",
+    "song": "Bank Account",
+    "decoys": [
+      "Kanye West",
+      "Ice Spice",
+      "Future"
+    ]
+  },
+  {
+    "artist": "Tyga",
+    "song": "Taste",
+    "decoys": [
+      "Puff Daddy",
+      "GloRilla",
+      "Yung Joc"
+    ]
+  },
+  {
+    "artist": "French Montana",
+    "song": "Unforgettable",
+    "decoys": [
+      "Jack Harlow",
+      "Busta Rhymes",
+      "Lil Tjay"
+    ]
+  },
+  {
+    "artist": "Rae Sremmurd",
+    "song": "Black Beatles",
+    "decoys": [
+      "Ying Yang Twins",
+      "Tommy Richman",
+      "NLE Choppa"
+    ]
+  },
+  {
+    "artist": "Bobby Shmurda",
+    "song": "Hot Nigga",
+    "decoys": [
+      "Megan Thee Stallion",
+      "Lil Tjay",
+      "Mike Jones"
+    ]
+  },
+  {
+    "artist": "Fetty Wap",
+    "song": "Trap Queen",
+    "decoys": [
+      "Lil Baby",
+      "Don Toliver",
+      "Mike Jones"
+    ]
+  },
+  {
+    "artist": "Desiigner",
+    "song": "Panda",
+    "decoys": [
+      "Kendrick Lamar",
+      "Young Thug",
+      "Tyga"
+    ]
+  },
+  {
+    "artist": "Kendrick Lamar",
+    "song": "Not Like Us",
+    "decoys": [
+      "2Pac",
+      "Kanye West",
+      "Sexyy Red"
+    ]
+  },
+  {
+    "artist": "Drake",
+    "song": "Toosie Slide",
+    "decoys": [
+      "XXXTentacion",
+      "Meek Mill",
+      "Nelly"
+    ]
+  },
+  {
+    "artist": "J. Cole",
+    "song": "Amari",
+    "decoys": [
+      "Wu-Tang Clan",
+      "Latto",
+      "Geto Boys"
+    ]
+  },
+  {
+    "artist": "Travis Scott",
+    "song": "FE!N",
+    "decoys": [
+      "Geto Boys",
+      "Ja Rule",
+      "Cordae"
+    ]
+  },
+  {
+    "artist": "Future",
+    "song": "Life Is Good",
+    "decoys": [
+      "Juvenile",
+      "Central Cee",
+      "The Notorious B.I.G."
+    ]
+  },
+  {
+    "artist": "Future",
+    "song": "Like That",
+    "decoys": [
+      "Chingy",
+      "Fugees",
+      "Big Sean"
+    ]
+  },
+  {
+    "artist": "Jack Harlow",
+    "song": "First Class",
+    "decoys": [
+      "Jim Jones",
+      "Meek Mill",
+      "Fat Joe"
+    ]
+  },
+  {
+    "artist": "Jack Harlow",
+    "song": "Lovin On Me",
+    "decoys": [
+      "Megan Thee Stallion",
+      "Drake",
+      "Coi Leray"
+    ]
+  },
+  {
+    "artist": "Lil Baby",
+    "song": "Drip Too Hard",
+    "decoys": [
+      "2Pac",
+      "50 Cent",
+      "21 Savage"
+    ]
+  },
+  {
+    "artist": "Lil Baby",
+    "song": "The Bigger Picture",
+    "decoys": [
+      "Meek Mill",
+      "Travis Scott",
+      "Geto Boys"
+    ]
+  },
+  {
+    "artist": "Gunna",
+    "song": "fukumean",
+    "decoys": [
+      "2Pac",
+      "Pop Smoke",
+      "Paul Wall"
+    ]
+  },
+  {
+    "artist": "Doja Cat",
+    "song": "Paint The Town Red",
+    "decoys": [
+      "Cardi B",
+      "Soulja Boy",
+      "Tyler, The Creator"
+    ]
+  },
+  {
+    "artist": "Doja Cat",
+    "song": "Say So",
+    "decoys": [
+      "Future",
+      "Ice Cube",
+      "Nicki Minaj"
+    ]
+  },
+  {
+    "artist": "Megan Thee Stallion",
+    "song": "Savage",
+    "decoys": [
+      "Busta Rhymes",
+      "Ice Spice",
+      "Big Sean"
+    ]
+  },
+  {
+    "artist": "Megan Thee Stallion",
+    "song": "HISS",
+    "decoys": [
+      "N.W.A",
+      "Pitbull",
+      "Outkast"
+    ]
+  },
+  {
+    "artist": "Roddy Ricch",
+    "song": "The Box",
+    "decoys": [
+      "Don Toliver",
+      "Cordae",
+      "NLE Choppa"
+    ]
+  },
+  {
+    "artist": "Pop Smoke",
+    "song": "Dior",
+    "decoys": [
+      "50 Cent",
+      "Kanye West",
+      "Lil Tjay"
+    ]
+  },
+  {
+    "artist": "Pop Smoke",
+    "song": "What You Know Bout Love",
+    "decoys": [
+      "Young Thug",
+      "Lil Wayne",
+      "XXXTentacion"
+    ]
+  },
+  {
+    "artist": "Ice Spice",
+    "song": "Munch (Feelin' U)",
+    "decoys": [
+      "Flo Milli",
+      "Juice WRLD",
+      "Eminem"
+    ]
+  },
+  {
+    "artist": "Latto",
+    "song": "Big Energy",
+    "decoys": [
+      "Lupe Fiasco",
+      "Jack Harlow",
+      "Eminem"
+    ]
+  },
+  {
+    "artist": "GloRilla",
+    "song": "F.N.F. (Let's Go)",
+    "decoys": [
+      "Public Enemy",
+      "Hurricane Chris",
+      "Fat Joe"
+    ]
+  },
+  {
+    "artist": "Yeat",
+    "song": "Mon\u00eby so big",
+    "decoys": [
+      "Mac Miller",
+      "Eminem",
+      "MC Hammer"
+    ]
+  },
+  {
+    "artist": "21 Savage",
+    "song": "Redrum",
+    "decoys": [
+      "NLE Choppa",
+      "Don Toliver",
+      "Soulja Boy"
+    ]
+  },
+  {
+    "artist": "Lil Yachty",
+    "song": "Poland",
+    "decoys": [
+      "Cordae",
+      "Wu-Tang Clan",
+      "Logic"
+    ]
+  },
+  {
+    "artist": "Central Cee",
+    "song": "Doja",
+    "decoys": [
+      "Ice Spice",
+      "Ludacris",
+      "Common"
+    ]
+  },
+  {
+    "artist": "Gunna",
+    "song": "Sold Out Dates",
+    "decoys": [
+      "Nelly",
+      "Clipse",
+      "Tommy Richman"
+    ]
+  },
+  {
+    "artist": "Juice WRLD",
+    "song": "GO",
+    "decoys": [
+      "Ice Cube",
+      "Sexyy Red",
+      "Fugees"
+    ]
+  },
+  {
+    "artist": "Polo G",
+    "song": "Rapstar",
+    "decoys": [
+      "DMX",
+      "Macklemore",
+      "Paul Wall"
+    ]
+  },
+  {
+    "artist": "Lil Tjay",
+    "song": "Calling My Phone",
+    "decoys": [
+      "Eminem",
+      "Lil Uzi Vert",
+      "Method Man"
+    ]
+  },
+  {
+    "artist": "NLE Choppa",
+    "song": "Shotta Flow",
+    "decoys": [
+      "Vanilla Ice",
+      "Outkast",
+      "DMX"
+    ]
+  },
+  {
+    "artist": "Cordae",
+    "song": "Chronicles",
+    "decoys": [
+      "Method Man",
+      "Mac Miller",
+      "Juice WRLD"
+    ]
+  },
+  {
+    "artist": "Joey Bada$$",
+    "song": "Head High",
+    "decoys": [
+      "Tommy Richman",
+      "Juice WRLD",
+      "Fetty Wap"
+    ]
+  },
+  {
+    "artist": "Coi Leray",
+    "song": "Players",
+    "decoys": [
+      "Busta Rhymes",
+      "J. Cole",
+      "GloRilla"
+    ]
+  },
+  {
+    "artist": "Sexyy Red",
+    "song": "SkeeYee",
+    "decoys": [
+      "Yeat",
+      "Desiigner",
+      "Lil Baby"
+    ]
+  },
+  {
+    "artist": "Offset",
+    "song": "Worth It",
+    "decoys": [
+      "2Pac",
+      "T.I.",
+      "21 Savage"
+    ]
+  },
+  {
+    "artist": "Quavo",
+    "song": "Hotel Lobby",
+    "decoys": [
+      "Joey Bada$$",
+      "Pop Smoke",
+      "French Montana"
+    ]
+  },
+  {
+    "artist": "Killer Mike",
+    "song": "Scientists & Engineers",
+    "decoys": [
+      "Fugees",
+      "Cam'ron",
+      "Macklemore"
+    ]
+  },
+  {
+    "artist": "Latto",
+    "song": "Put It On Da Floor",
+    "decoys": [
+      "Paul Wall",
+      "Nas",
+      "Cam'ron"
+    ]
+  },
+  {
+    "artist": "GloRilla",
+    "song": "Wanna Be",
+    "decoys": [
+      "A$AP Rocky",
+      "Meek Mill",
+      "Dr. Dre"
+    ]
+  },
+  {
+    "artist": "Drake",
+    "song": "First Person Shooter",
+    "decoys": [
+      "Outkast",
+      "Lil Jon",
+      "Craig Mack"
+    ]
+  },
+  {
+    "artist": "Nicki Minaj",
+    "song": "Red Ruby Da Sleeze",
+    "decoys": [
+      "Coolio",
+      "Soulja Boy",
+      "Craig Mack"
+    ]
+  },
+  {
+    "artist": "Tyler, The Creator",
+    "song": "WUSYANAME",
+    "decoys": [
+      "Chamillionaire",
+      "Yung Joc",
+      "French Montana"
+    ]
+  },
+  {
+    "artist": "J. Cole",
+    "song": "7 Minute Drill",
+    "decoys": [
+      "Big Pun",
+      "Latto",
+      "Mike Jones"
+    ]
+  },
+  {
+    "artist": "Kendrick Lamar",
+    "song": "Euphoria",
+    "decoys": [
+      "Macklemore",
+      "Pitbull",
+      "Warren G"
+    ]
+  },
+  {
+    "artist": "Don Toliver",
+    "song": "After Party",
+    "decoys": [
+      "Outkast",
+      "Post Malone",
+      "Nelly"
+    ]
+  },
+  {
+    "artist": "Travis Scott",
+    "song": "MELTDOWN",
+    "decoys": [
+      "Chingy",
+      "Missy Elliott",
+      "Fetty Wap"
+    ]
+  },
+  {
+    "artist": "Future",
+    "song": "Type Shit",
+    "decoys": [
+      "Fetty Wap",
+      "Fugees",
+      "Meek Mill"
+    ]
+  },
+  {
+    "artist": "Tommy Richman",
+    "song": "Million Dollar Baby",
+    "decoys": [
+      "Lil Tjay",
+      "Drake",
+      "Childish Gambino"
+    ]
+  },
+  {
+    "artist": "Shaboozey",
+    "song": "A Bar Song (Tipsy)",
+    "decoys": [
+      "Jim Jones",
+      "Clipse",
+      "Mike Jones"
+    ]
+  },
+  {
+    "artist": "Flo Milli",
+    "song": "Never Lose Me",
+    "decoys": [
+      "Ice Spice",
+      "Mike Jones",
+      "Kanye West"
+    ]
+  }
+]
