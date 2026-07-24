@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #181715;
+    color: #eae9e6;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  input, select, textarea {
+    font-family: inherit;
+  }
+}
+
+/* Custom scrollbars matching the ledger aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #181715;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3d3933;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Remove spin buttons from number inputs for a cleaner "ledger" aesthetic */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Ledger paper texture or grid background (optional subtly styled cards) */
+.ledger-grid-pattern {
+  background-size: 20px 20px;
+  background-image: linear-gradient(to right, #24221f 1px, transparent 1px),
+                    linear-gradient(to bottom, #24221f 1px, transparent 1px);
+}
